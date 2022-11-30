@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+	 <html>
+		 <head>
+		 	<meta charset="utf-8">
+		 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		 	<link rel="stylesheet" type="text/css" href="style.css">
+		 	<title>DSNN</title>
+		 </head>
+		 <body>
+
+		 	<div class="scores-nav">
+		 		<h2 id="score-header">Live Scores</h2>
+		 		<section class="grid-header">
+		 			<p class="item1">SJC Ninjas - 314</p>
+		 			<p class="item2">NS Pirates - 159</p>
+		 			<p class="item3">CHI Samurai - 0</p>
+		 			<p class="item4">TUL Wizards - 0</p>
+		 			<p class="item5">BOS Hackers - 13</p>
+		 			<p class="item6">TYO Youkai - 37</p>
+		 			<p class="item7">BOI Knights - 5</p>
+		 			<p class="item8">SEA Sea Lions - 11</p>
+		 		</section>
+		 	</div>
+
+		 	<div class="topnav">
+		 		<h2 class="header-title">DSNN</h2>
+		 		<a href="#"><p>Football</p></a>
+		 		<a href="#"><p>Basketball</p></a>
+		 		<a href="#"><p>Baseball</p></a>
+		 		<a href="#"><p>Soccer</p></a>
+		 		<a href="#"><p>More...</p></a>
+		 		<section class="icons">
+		 			<img class="search" src="dsnn/assets/search-light.png" alt="search">
+		 			<img class="hamburger" src="dsnn/assets/hamburger-light.png" alt="hamburger">
+		 			<img class="user" src="dsnn/assets/user-circle-light.png" alt="user">
+		 		</section>
+		 	</div>
+
+		 	<div class="side-container">
+
+		 		<div id="heresy-box">
+			 		<div id="box1">
+			 			<h1>Top Stories</h1>
+			 			 <hr>
+			 			<p class="stories-links"><a href="#">Ninjas up big in 5th</a></p>
+			 			<p class="stories-links"><a href="#">Best sports cities</a></p>
+			 			<p class="stories-links"><a href="#">Choi joins Hall of Fame</a></p>
+			 			<p class="stories-links"><a href="#">Tournatment underway</a></p>
+			 			<p class="stories-links"><a href="#">Samurai at Wizards...</a></p>
+			 		</div>
+
+
+			 		<div id="box2">
+			 			<h2>Customize your DSNN</h2>
+			 			<button id="customize-btn1">Sign In</button>
+			 			<button id="customize-btn2">Sign up</button>
+			 		</div>
+			 		
+
+			 		<div id="box3">
+			 			<h2>Never miss a play</h2>
+			 			<button id="sub-btn" onclick="deleteMe(this)">Subscribe</button>
+			 		</div>
+		 		</div>
+
+		 		<!-- let's be fair, the div below felt like a lazy and a kinda smart way to do it. I know it looks like a mess, but it seems to be working well so far? Did I mention that you look fabulous today? :D -->
+
+		 		<div class="live-container">
+					<h1 id="live-text">&#x1F534;<span class="red-live">Live</span> Ninjas leading Pirates</h1>
+					<img src="dsnn/assets/sjc-ninjas.png" alt="ninja-logo"> 
+					<p id="vs-text">VS</p> 
+					<img src="dsnn/assets/ns-pirates.png" alt="pirate-logo">
+					<p class="san-jose">San Jose<br>
+					<span  id="team-name-sj">Ninjas</span><br>
+					<span class="team-spread">(10W - 3L)</span><br>
+					<span onclick="addScoreNinjas(this)" id="team-score1">319</span></p>
+					<p class="time-remain">0:13 remaining<br>5th period</p><p class="nova-scotia">Nova Scotia<br>
+					<span id="team-name-ns">Pirates</span><br>
+					<span class="team-spread">(12W - 2L)</span><br>
+					<span onclick="addScorePirates(this)" id="team-score2">164</span></p>
+					<p id="live-sub-text">A conservative match between the two top-performing sides in the Central League Division with a number 1 seed at stake... <a href="#">get live updates</a></p>
+				</div>
+		 	</div>
+
+
+		<!-- I honestly tried to use as little divs as possible, and i think becausse of my limited knowledge, a lot of times is seemed like a logical way out of some code holes, hence why you see the "heresy-box" div. It literally positioned the boxes in the exact spot that I needed them :( -->
+
+		 	
+		 
+		 <script src="script.js"></script>
+		 </body>
+	 </html>

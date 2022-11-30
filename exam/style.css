@@ -1,0 +1,276 @@
+/* Look, I know 200+ lines of css seems like a lot... but it didn't feel like a lot */
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.side-container{
+	justify-content: center;
+	margin-left: 450px;
+	margin-right: 450px;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+
+#box1 {
+	margin: 10px;
+	padding: 10px;
+	height: 200px;
+	width: 250px;
+	background-color: white;
+	border-radius: 25px;
+	display: block;
+}
+
+
+#box2{
+	margin: 10px;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	height: 100px;
+	width: 250px;
+	border-radius: 25px;
+}
+
+#customize-btn1{
+	border-radius: 3px;
+	background-color: royalblue;
+	font-weight: bold;
+	box-shadow: 3px 3px 2px;
+	margin-top: 15px;
+	width: 100px;
+	height: 35px;
+}
+
+
+#customize-btn2{
+	border-radius: 3px;
+	background-color: white;
+	font-weight: bold;
+	box-shadow: 3px 3px 2px;
+	margin-top: 15px;
+	width: 100px;
+	height: 35px;
+}
+
+#box3{
+	margin: 10px;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	height: 100px;
+	width: 250px;
+	border-radius: 25px;
+}
+
+#sub-btn{
+	border-radius: 3px;
+	background-color: rgb(241, 213, 146);
+	box-shadow: 3px 3px 3px;
+	margin-top: 15px;
+	width: 200px;
+	height: 35px;
+}
+
+
+
+#sub-text{
+	font-size: 1.5em;
+}
+
+.stories-links{
+	font-size: 1.4em;
+}
+
+.stories-links a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.live-container{
+	justify-content: center;
+	width: 650px;
+	margin: 10px;
+	float: right;
+	flex-wrap: wrap;
+	display: flex;
+	border-radius: 25px;
+	padding: 10px;
+	background-color: white;
+}
+
+#vs-text{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 3em;
+	margin-top: 100px;
+	vertical-align: middle;
+}
+
+#live-text{
+	margin: 25px;
+}
+
+.red-live{
+	color: red;
+}
+
+.san-jose, .nova-scotia{
+	text-align: center;
+	font-weight: bold;
+}
+
+#team-name-sj{
+	font-size: 2em;
+	color: teal;
+}
+
+#team-name-ns{
+	font-size: 2em;
+	color: red;
+}
+
+.time-remain{
+	text-align: center;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.team-spread{
+	color: lightgrey;
+}
+
+#team-score1{
+	font-size: 3.5em;
+}
+
+#team-score2{
+	font-size: 3.5em;
+}
+
+#live-sub-text{
+	margin: 15px;
+	border-top: 3px solid black;
+}
+
+
+/* top nav */
+
+
+.topnav{
+	height: 55px;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center;
+	color: white;
+	display: flex;
+	background-color: black;
+	overflow: hidden;
+}
+
+.topnav a{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 17pxs;
+	font-size: 1.5em;
+}
+
+.header-title{
+	background-color: red;
+	font-size: 2em;
+	padding: 7px;
+}
+
+
+
+/* top score */
+
+.icons{
+	margin-left: 55px;
+	float: right;
+}
+
+.search, .user, .hamburger{
+	padding: 12px;
+	margin-left: 5px;
+	width: 30px;
+	width: 30px;
+}
+
+
+.scores-nav{
+	margin-bottom: -15px;
+	justify-content: center;
+	display: flex;
+	background-color: white;
+	padding: 25px;
+	display: flex;
+	text-align: center;
+}
+
+#score-header{
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* this may not be the best way to style it, but it felt like a really rare time that this is an appropiate use case for the grid styling. Extra credit???? */
+
+.grid-header{
+	margin-right: -600px;
+	display: grid;
+	grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+	grid-template-rows: 30px 30px;
+	
+}
+
+.item1{
+	grid-column: 1;
+	grid-row: 1 / 2;
+}
+
+.item2{
+	grid-column: 1;
+	grid-row: 2 / 2;
+}
+
+.item3{
+	grid-column: 2;
+	grid-row: 1 / 2;
+}
+
+.item4{
+	grid-column: 2;
+	grid-row: 2 / 2;
+}
+
+.item5{
+	grid-column: 3;
+	grid-row: 1 / 2;
+}
+
+.item6{
+	grid-column: 3;
+	grid-row: 2 / 2;
+}
+
+.item7{
+	grid-column: 4;
+	grid-row: 1 / 2;
+}
+
+.item8{
+	grid-column: 4;
+	grid-row: 2 / 2;
+}
